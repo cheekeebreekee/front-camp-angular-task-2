@@ -4,12 +4,9 @@ angular.module('testApp').factory('articlesFactory', ['dataService', function(da
 
     function modifyIncomingArticle(article) {
         var newArticle = Object.assign({}, article);
-
         newArticle.date = newArticle.date.toJSON();
-
         return newArticle;
     }
-
     return {
         getAllArticles: function() {
             return articles;
