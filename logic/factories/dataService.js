@@ -8,4 +8,5 @@ angular.module('testApp').factory('dataService',['$resource', function($resource
             cache: true
         }
     });
+    
 }]);
